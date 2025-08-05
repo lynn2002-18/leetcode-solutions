@@ -1,6 +1,28 @@
 # leetcode-solutions
 My personal LeetCode solutions in Python and Java
 
+### 9. Palindrome Number – [LeetCode #9](https://leetcode.com/problems/palindrome-number/)
+
+**Problem:**  
+Given an integer `x`, return `true` if `x` is a palindrome. A palindrome is a number that reads the same forward and backward.
+
+**Approach:**  
+Instead of converting the number to a string, we use math to reverse the last half of the digits, and compare with the first half:
+
+- If the number is negative or ends with 0 (but is not 0), return `false`
+- While the original number `x` is greater than the reversed number:
+  - Pop the last digit from `x`
+  - Push it to `reversed`
+- After the loop:
+  - If `x == reversed` (even length) or `x == reversed / 10` (odd length), then it's a palindrome
+
+---
+
+**Time Complexity:** O(log n)  
+**Space Complexity:** O(1)
+
+
+
 ### 35. Search Insert Position – [LeetCode #35](https://leetcode.com/problems/search-insert-position/)
 
 **Problem:**  
