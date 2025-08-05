@@ -21,6 +21,21 @@ Instead of converting the number to a string, we use math to reverse the last ha
 **Time Complexity:** O(log n)  
 **Space Complexity:** O(1)
 
+### 29. Divide Two Integers – [LeetCode #29](https://leetcode.com/problems/divide-two-integers/)
+
+**Problem:**  
+Given two integers `dividend` and `divisor`, divide them without using multiplication (`*`), division (`/`), or modulus (`%`) operators. Return the **quotient** after dividing `dividend` by `divisor`, truncated toward zero.
+
+---
+
+**Approach:**
+define int count = 0
+Use while loop with dividen <= divisor to get quotient = count++; reminder =  the value of dividen in the last loop;
+Ex. 10 / 3 =
+10-3=7, 7-3=4, 4-3=1
+then, the quotient is 3 ( the dividen can be minus by divisor 3 times), 
+the reminder is the value of dividen in the last loop
+
 
 
 ### 35. Search Insert Position – [LeetCode #35](https://leetcode.com/problems/search-insert-position/)
